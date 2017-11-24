@@ -1,0 +1,22 @@
+create database service_desk;
+
+use service_desk;
+
+create table usuarios(
+	id int not null primary key auto_increment,
+	usuario varchar(50),
+	email varchar(100) not null,
+	senha varchar(32) not null,
+	cpf varchar(11) not null
+);
+
+create table notice(
+	id_notice int not null primary key auto_increment,
+	id_usuario int not null,
+	notice varchar(255) not null,
+	importante char(1) check(importante='S' or importante='N'),
+	data_inclusao datetime default current_timestamp
+);
+
+
+

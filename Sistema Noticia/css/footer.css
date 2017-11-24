@@ -1,0 +1,31 @@
+* { margin:0; padding:0; }
+html, body {height:100%;}
+.main {
+    min-height:100%; 
+    position:relative; 
+    width:1200px;
+    margin: 0 auto;
+}
+
+html, body {height:100%;}
+
+.geral {
+    min-height:100%;
+    position:relative;
+    width:800px;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin-top: 10px;
+}
+.content{   
+    width: 100%;
+    background: #cccccc;   
+}
+.content {overflow:hidden;}
+.aside {width:200px;}
+.fleft {float:left;}
+.fright {float:right;}
